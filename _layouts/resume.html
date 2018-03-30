@@ -20,8 +20,9 @@
         <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
 
         <!-- Contact buttons don't work in print, configure in the _config.yml file, remove "print-only" to display always. -->
-        <div class="header-contact-info print-only">
+        <div class="header-contact-info">
           <p>{{ site.resume_header_contact_info }}</p>
+          </br>
         </div>
 
         <div class="title-bar no-print">
@@ -37,9 +38,16 @@
           {{ site.resume_header_intro }}
         </div>
         
+        {% if site.blog == 'yes' %}
+        <a href="{{ site.blog_link }}" download 
+        class="contact-button no-print">My Blog</a>
+        {% elsif site.blog == 'no' %}
+        {% else %}
+        {% endif %}
+         
          {% if site.resume_downloadable == 'yes' %}
         <a href="{{ site.resume_filename }}" download 
-        class="contact-button no-print">C&thinsp;V &mdash; English</a>
+        class="contact-button no-print">Resume &mdash; English</a>
         {% elsif site.resume_downloadable == 'no' %}
         <a class="contact-button not-looking no-print">No CV available</a>
         {% else %}

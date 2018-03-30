@@ -10,8 +10,8 @@
 
 # OpenGL VFI - CE Final Presentation:
     
-- project: OpenCL VFI in Julia
+- project: GPU/OpenCL Value Function Iteration in Julia
   role: Project for Computation Economics
   duration: 2018
-  url: "https://github.com/giob1994/OpenCL-VFI-in-Julia"
+  url: "https://github.com/giob1994/GPU-OpenCL-VFI-in-Julia"
   description: A simple implementation in Julia of a Value Function Interation algorithm that runs on the GPU thanks to OpenCL.
