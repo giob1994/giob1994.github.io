@@ -8,6 +8,12 @@
 #  # url: "#"
 #  description: Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.
 
+- project: Talk – GPU-Accelerated Value Function Iteration in Julia
+  role: JuliaCon 2018
+  duration: August 2018
+  url: "https://youtu.be/ehUb-S6Bxnk?t=13m42s"
+  description: At JuliaCon 2018 I present my project on using Julia and GPUArrays.jl to solve macroeconomic models faster.
+
 # OpenGL VFI - CE Final Presentation:
     
 - project: GPU/OpenCL Value Function Iteration in Julia
