@@ -3,7 +3,9 @@
 
 title: Giovanni Ballarin
 url: 
-baseurl: 
+baseurl:
+
+remote_theme: ankitsultana/researcher@gem
 
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
