@@ -22,8 +22,34 @@
         <!-- Contact buttons don't work in print, configure in the _config.yml file, remove "print-only" to display always. -->
         <div class="header-contact-info">
           <p>{{ site.resume_header_contact_info }}</p>
-          </br>
         </div>
+
+        <div class="header-contact-add">
+          <p>{{ site.resume_header_contact_add }}</p>
+        </div>
+
+        {% if site.resume_looking_for_work == 'yes' %}
+        <a href="mailto:{{ site.resume_contact_email }}"  
+        class="contact-button no-print" itemprop="email">Contact me</a>
+        {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+        {% else %}
+        {% endif %}
+        
+        {% if site.blog == 'yes' %}
+        <a href="{{ site.blog_link }}" download 
+        class="contact-button no-print">My Blog</a>
+        {% elsif site.blog == 'no' %}
+        {% else %}
+        {% endif %}
+         
+        {% if site.resume_downloadable == 'yes' %}
+        <a href="{{ site.resume_filename }}" download 
+        class="contact-button no-print">Resume (English)</a>
+        {% elsif site.resume_downloadable == 'no' %}
+        <a class="contact-button not-looking no-print">No CV available</a>
+        {% else %}
+        {% endif %}
 
         <div class="title-bar no-print">
 
@@ -33,35 +59,42 @@
           <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
           {% include icon-links.html %}
         </div>
-
+        
         <div class="executive-summary no-print" itemprop="description">
           {{ site.resume_header_intro }}
         </div>
-        
-        {% if site.blog == 'yes' %}
-        <a href="{{ site.blog_link }}" download 
-        class="contact-button no-print">My Blog</a>
-        {% elsif site.blog == 'no' %}
-        {% else %}
-        {% endif %}
-         
-         {% if site.resume_downloadable == 'yes' %}
-        <a href="{{ site.resume_filename }}" download 
-        class="contact-button no-print">Resume &mdash; English</a>
-        {% elsif site.resume_downloadable == 'no' %}
-        <a class="contact-button not-looking no-print">No CV available</a>
-        {% else %}
-        {% endif %}
 
-        {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}"  
-        class="contact-button no-print" itemprop="email">Contact me</a>
-        {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
-        {% else %}
-        {% endif %}
+        <!-- Adding personalized image banner -->
+        <figure class="banner-image">
+            <img src="images/skagafjordur.jpg" alt="Mountain lit by sunset, Iceland">
+            <figcaption>
+                {{ site.banner_image_caption }}
+            </figcaption>
+        </figure>
+
+        </br>
 
       </header>
+
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        {% for project in site.data.projects %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
+          <p class="resume-item-copy">{{ project.description }}</p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}
 
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
@@ -101,27 +134,6 @@
         {% endfor %}
       </section>
       <!-- end Education -->
-      {% endif %}
-
-
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
-
-        {% for project in site.data.projects %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
-          <p class="resume-item-copy">{{ project.description }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Projects -->
       {% endif %}
 
       {% if site.resume_section_skills %}
