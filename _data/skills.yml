@@ -2,8 +2,11 @@
 
 # Languages
 - skill: Language
-  description: Italian (Mothertongue), English (Proficient), German (A1 Level)
+  description: "<b>Italian</b> (Mothertongue), <b>English</b> (Proficient), <b>German</b> (A1 Level)."
 
 - skill: Programming
-  description: 
-
+  description: "I enjoy programming in my work and as a hobby. 
+                  My programming languages of choice are: <b>R, Julia, MATLAB</b>
+                  and occasionally Python and Stata. I have some knowledge of 
+                  HTML, CSS and (basic) JavaScript. For (ugly) computational art, 
+                  I love using <b>Processing</b>."

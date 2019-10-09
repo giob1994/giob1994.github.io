@@ -11,13 +11,13 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Giovanni Ballarin"
-resume_title:                   "📓 Economics PhD Candidate"
+resume_title:                   "🏔️ About Me"
 resume_contact_email:           "giovanni.ballarin[at]gess.uni-mannheim.de"
 resume_contact_telephone:       ""
 resume_contact_address:         "B6 30-32, Room 234, Mannheim 68131, Germany"
 resume_header_contact_info:     "I am a <b>PhD student in Economics</b> at the 
-                                    <b>Graduate School of Economics and Social Sciences (GESS)</b>,  
-                                    <i>University of Mannheim</i>"
+                                    <b>Graduate School of Economics and Social Sciences (GESS),  
+                                    University of Mannheim</b>."
 resume_header_contact_add:      "B6 30-32, Room 234, 68131 Mannheim, Germany"
 resume_header_intro:            "My main fields of interest are macroeconomics &amp; labor economics, 
                                     time series econometrics, computational economics and machine learning."
