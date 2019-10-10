@@ -30,7 +30,7 @@
 
         {% if site.resume_looking_for_work == 'yes' %}
         <a href="mailto:{{ site.resume_contact_email }}"  
-        class="contact-button no-print" itemprop="email">Contact me</a>
+        class="contact-button no-print" itemprop="email">✉️ Contact</a>
         {% elsif site.resume_looking_for_work == 'no' %}
         <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
         {% else %}
@@ -51,7 +51,7 @@
         {% else %}
         {% endif %}
 
-        <div class="title-bar no-print">
+        <div class="title-bar">
 
           <!-- Your title is also defined in the _config.yml file -->
           <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
@@ -60,12 +60,14 @@
           {% include icon-links.html %}
         </div>
         
-        <div class="executive-summary no-print" itemprop="description">
-          {{ site.resume_header_intro }}
+        <div class="executive-summary" itemprop="description">
+          <p>
+            {{ site.resume_header_intro }}
+          </p>
         </div>
 
         <!-- Adding personalized image banner -->
-        <figure class="banner-image">
+        <figure class="banner-image no-print">
             <img src="images/skagafjordur.jpg" alt="Mountain lit by sunset, Iceland">
             <figcaption>
                 {{ site.banner_image_caption }}
@@ -80,7 +82,7 @@
       <!-- begin Projects -->
       <section class="content-section">
         <header class="section-header">
-          <h2>📦 Projects</h2>
+          <h2>⚗️ Projects</h2>
         </header>
 
         {% for project in site.data.projects %}
@@ -101,7 +103,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>⚗️ Experience</h2>
+          <h2>🗺️ Experience</h2>
         </header>
 
         {% for job in site.data.experience %}
@@ -141,7 +143,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>🥋 Skills</h2>
+          <h2>🥋 Miscellaneous</h2>
         </header>
         {% for skill in site.data.skills %}
         <div class="resume-item">
