@@ -40,11 +40,12 @@ html {
  }
 
  .portrait {
+     padding-left: 2.4rem;
      max-width: 200px;
  }
 
  .contact {
-     font-size: 0.85rem;
+     font-size: 0.95rem;
  }
 
  nav {
