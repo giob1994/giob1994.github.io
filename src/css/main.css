@@ -39,8 +39,11 @@ html {
      margin-left: -0.1rem;
  }
 
+ header .row figure {
+    padding-left: 2.4rem;
+ }
+
  .portrait {
-     padding-left: 2.4rem;
      max-width: 200px;
  }
 
