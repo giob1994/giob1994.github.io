@@ -56,6 +56,10 @@ html {
      margin-bottom: 0.5em;
  }
 
+ .abstract {
+     font-size: 0.8rem;
+ }
+
  .footnote p {
      font-size: 0.8rem;
  }
