@@ -9,9 +9,9 @@
         <title>Giovanni Ballarin</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://unpkg.com/awsm.css/dist/awsm.min.css">
+        <link rel="stylesheet" href="/src/css/awsm.min.css">
         <link rel="stylesheet" href="/src/css/simple-grid.css">
-        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+        <link rel="stylesheet" href="/src/css/colors.min.css">
         <link rel="stylesheet" href="/src/css/main.css">
     </head>
     <body>
@@ -27,7 +27,8 @@
                     </p>
                     <br>
                     <address class="contact">
-                        <a href="mailto:giovanni.ballarin[@]gess.uni-manheim.de">giovanni.ballarin[@]gess.uni-manheim.de</a><br> 
+                        <!-- <a href="mailto:giovanni.ballarin[at]gess.uni-manheim.de">giovanni.ballarin[at]gess.uni-manheim.de</a><br> -->
+                        giovanni.ballarin[at]gess.uni-manheim.de<br>
                         L7 3-5<br>
                         1. OG, Zi 109<br>
                         68131 Mannheim<br>
@@ -51,37 +52,51 @@
         <main>
             <article>
                 <section>
-<h2>Research</h2>
+<h3>Research</h3>
 <p>My main research interests are time series econometrics, macroeconomics &amp; macroeconometrics and machine learning.</p>
-<h4>Working Papers</h4>
+<h3>Working Papers</h3>
 <br>
 <ul>
-<li><em>Ridge Regularized Estimation of VAR Models for Inference and Sieve Approximation</em> (2021)
-<br> <div class="abstract">
-<b>Abstract:</b> Developments in statistical learning have fueled the analysis of high-dimensional
-time series. On the other hand, even in low-dimensional contexts the issues arising from ill-conditioned
-regression problems are well-known. Because linear time series modeling is naturally prone to such
-issues, I propose to apply ridge regression to the estimation of dense VAR models. Theoretical non-asymptotic
-results concerning the addition of a ridge-type penalty to the least squares estimator are discussed,
-while standard asymptotic and inference techniques are proven to be valid under mild conditions on the
-regularizer. The proposed estimator is then applied to the problem of sieve approximation of VAR(∞) processes
-under moderately harsh sample sizes. Simulation evidence is used to discuss the small sample properties
-of the ridge estimator (RLS) when compared to least squares and local projection approaches: I use a
-Monte Carlo exercise to argue that RLS with a lag-adapted cross-validated regularizer achieve meaningfully
-better performance in recovering impulse response functions and asymptotic confidence intervals than other
-common approaches.</li>
+<li><em>Ridge Regularized Estimation of VAR Models for Inference and Sieve Approximation</em>
+<br> <div class="abstract">  <div class="paper_links">
+      <a href="src/files/ridge_var_2021.pdf"><b>[Working Paper] (April, 2021)</b></a> 
+  </div> 
+  <b>Abstract:</b> Developments in statistical learning have fueled the analysis of high-dimensional 
+  time series. On the other hand, even in low-dimensional contexts the issues arising from ill-conditioned 
+  regression problems are well-known. Because linear time series modeling is naturally prone to such 
+  issues, I propose to apply ridge regression to the estimation of dense VAR models. Theoretical non-asymptotic 
+  results concerning the addition of a ridge-type penalty to the least squares estimator are discussed, 
+  while standard asymptotic and inference techniques are proven to be valid under mild conditions on the 
+  regularizer. The proposed estimator is then applied to the problem of sieve approximation of VAR(∞) processes 
+  under moderately harsh sample sizes. Simulation evidence is used to discuss the small sample properties 
+  of the ridge estimator (RLS) when compared to least squares and local projection approaches: I use a 
+  Monte Carlo exercise to argue that RLS with a lag-adapted cross-validated regularizer achieve meaningfully 
+  better performance in recovering impulse response functions and asymptotic confidence intervals than other 
+  common approaches.
+</li>
+</ul>
+</div>
+<ul>
+<li><em>On the Limiting Distribution of Sieve VAR(∞) Estimators in Small Samples</em>
+<br> <div class="abstract">  <div class="paper_links paper_soon">
+      <a href=""><b>[Coming Soon]</b></a> 
+  </div> 
+  <!--  
+  <b>Abstract:</b> 
+  -->
+</li>
 </ul>
 </div>
 </section>
 <hr>
-<section>
+<section class="teaching">
 <h4>Teaching</h4>
 <br>
 <ul>
 <li><em>Mathematics for Economists (E700)</em> - WS 2019, 2020</li>
 </ul>
 </section>
-<section>
+<section class="projects">
 <h4>Past Projects</h4>
 <br>
 <ul>
@@ -104,7 +119,7 @@ common approaches.</li>
             <div class="footnote row">
                 <div class="col-12">
                     <p class="center">
-                        updated Fabruray, 2021
+                        updated April, 2021
                     </p> 
                 </div>
             </div>

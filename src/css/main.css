@@ -2,75 +2,96 @@
 
 @font-face {
     font-family: 'DDINRegular';
-        src: url('/src/font/D-DIN.ttf') format('truetype');
+    src: url('/src/font/D-DIN.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DDINDINBold';
-        src: url('/src/font/D-DIN-Bold.ttf') format('truetype');
+    src: url('/src/font/D-DIN-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DDINDINItalic';
-        src: url('/src/font/D-DIN-Italic.ttf') format('truetype');
+    src: url('/src/font/D-DIN-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 /* --- MAIN CSS --- */
 
-html { 
-    font-family: 'DDINRegular'; 
-    font-weight: normal; 
-    font-style: normal; 
- }
-
- header div {
-     margin-top: 1rem;
- }
-
- .title {
-     font-size: 2.3rem;
-     font-style: bold;
-     margin-left: -0.1rem;
- }
-
- header .row figure {
-    padding-left: 2.4rem;
- }
-
- .portrait {
-     max-width: 200px;
- }
-
- .contact {
-     font-size: 0.95rem;
- }
-
- nav {
-     margin-top: 1.2em;
-     margin-bottom: 0.5em;
- }
-
- .abstract {
-     font-size: 0.8rem;
- }
-
- .footnote p {
-     font-size: 0.8rem;
- }
-
- .round {
+.round {
     /* Safari 3-4, iOS 1-3.2, Android 1.6- */
-    -webkit-border-radius: 2px; 
-  
+    -webkit-border-radius: 2px;
+
     /* Firefox 1-3.6 */
-    -moz-border-radius: 2px; 
-    
+    -moz-border-radius: 2px;
+
     /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
-    border-radius: 2px; 
-  }
+    border-radius: 2px;
+}
+
+html {
+    font-family: 'DDINRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+header div {
+    margin-top: 1rem;
+}
+
+.title {
+    font-size: 2.3rem;
+    font-style: bold;
+    margin-left: -0.1rem;
+}
+
+header .row figure {
+    padding-left: 2.4rem;
+}
+
+.portrait {
+    max-width: 200px;
+}
+
+.contact {
+    font-size: 0.95rem;
+}
+
+nav {
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.paper_links a {
+    font-size: 1rem;
+}
+
+.paper_soon a {
+    color: gray;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+    touch-action: none;
+    -ms-touch-action: none;
+}
+
+.abstract {
+    font-size: 0.9rem;
+}
+
+.teaching li {
+    font-size: 1rem;
+}
+
+.projects li {
+    font-size: 1rem;
+}
+
+.footnote p {
+    font-size: 0.8rem;
+}
