@@ -16,12 +16,29 @@
                 text-align: center;
             }
 
-            .center {
+            .wrapper {
+                position: relative;
+                height: 0;
+                padding-top: 22em;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
                 width: 50%;
-                max-width: 350px;
+                max-width: 320px;
+            }
+
+            .wrapper__img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                max-width: 100%;
+                height: auto; 
+                /*user-drag: none;*/
+                -webkit-user-drag: none;
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
             }
 
             img {
@@ -47,9 +64,9 @@
         </style>
     </head>
     <body>
-        <img src="src/clumsy_small.png" alt="Oops" class="center">
-        <br>
-        <br>
+        <div class="wrapper">
+            <img src="src/clumsy_small.png" width="500" height="375" alt="Oops" class="wrapper__img">
+        </div>
         <p class="center">
             This page has been 
             <a href="https://giovanni-ballarin.netlify.app">
